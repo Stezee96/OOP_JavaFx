@@ -1,68 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
+.db_btn {
+    -fx-background-color: #a73;
+    -fx-cursor: hand;
+    -fx-font-family: "Arial";
+    -fx-font-size: 15px;
+    -fx-text-alignment: center;
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER;
+    -fx-background-radius: 10;
+    -fx-pref-width:200px;
+    -fx-pref-height: 50px;
+}
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
+.left_pane {
+    -fx-background-color: #a73;
+    -fx-pref-width: 130px;
+    -fx-pref-height: 600px;
+}
 
-<AnchorPane fx:id="hi" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="904.0" style="-fx-background-color: #a73;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <TextArea layoutX="727.0" layoutY="27.0" prefHeight="567.0" prefWidth="177.0" wrapText="true" style="-fx-control-inner-background: lightgreen;" />
-      <ImageView fitHeight="147.0" fitWidth="141.0" layoutX="14.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../nerd-bigstock_Extreme_Computer_Nerd_1520708.jpg" />
-         </image></ImageView>
-      <TextArea layoutX="1.0" layoutY="594.0" prefHeight="54.0" prefWidth="904.0" />
-      <MenuBar layoutX="1.0" layoutY="2.0" prefHeight="17.0" prefWidth="904.0" style="-fx-background-color: #841;">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Theme">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-            <Menu mnemonicParsing="false" text="Help">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Close" />
-               </items>
-            </Menu>
-        </menus>
-      </MenuBar>
-      <TableView layoutX="176.0" layoutY="27.0" prefHeight="567.0" prefWidth="551.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="75.0" text="First Name" />
-            <TableColumn prefWidth="75.0" text="Last Name" />
-            <TableColumn prefWidth="75.0" text="Department" />
-            <TableColumn prefWidth="75.0" text="Major" />
-            <TableColumn prefWidth="75.0" text="Email" />
-        </columns>
-      </TableView>
-      <TextField layoutX="741.0" layoutY="34.0" opacity="0.52" text="First Name" />
-      <TextField layoutX="741.0" layoutY="218.0" opacity="0.52" text="ImageURL" />
-      <TextField layoutX="741.0" layoutY="181.0" opacity="0.52" text="Email" />
-      <TextField layoutX="741.0" layoutY="144.0" opacity="0.52" text="Major" />
-      <TextField layoutX="741.0" layoutY="108.0" opacity="0.52" text="Depa  nment" />
-      <TextField layoutX="741.0" layoutY="68.0" opacity="0.52" text="Last Name" />
-      <Button fx:id="clearButton" layoutX="745.0" layoutY="425.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Clear" />
-      <Button fx:id="addButton" layoutX="745.0" layoutY="470.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Add" />
-      <Button fx:id="editButton" layoutX="745.0" layoutY="557.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Edit" />
-      <Button fx:id="deleteButton" layoutX="745.0" layoutY="513.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Delete" />
-   </children>
-</AnchorPane>
+.admin_section {
+    -fx-background-color: #999;
+}
+
+.table_columns {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+
+.menu_bar {
+    -fx-background-color: #841;
+}
+
+.anchor_pane {
+    -fx-background-color: #a73;
+}
+
+.text_field_pane {
+    -fx-background-color: #79dc05;
+
+}
+
+.image_view{
+    -fx-background-color: yellow;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #999999;
+    -fx-text-fill: black;
+}
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+    -fx-cell-size: 35;
+    -fx-alignment: center-left;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #29292D;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER_LEFT;
+
+}
+.table-row-cell:selected {
+    -fx-background-color: whitesmoke;
+    -fx-text-background-color:  #33FF55;
+
+
+}
+.table-view:focused .table-row-cell:selected .table-cell {
+    -fx-background-color: lightBlue;
+    -fx-text-fill: grey;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #FFFFFF,90%);
+    -fx-background-insets: 1, 0, 0;
+    -fx-background-radius: 2em;
